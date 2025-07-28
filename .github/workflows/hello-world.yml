@@ -1,0 +1,11 @@
+name: A simple yaml file for hello world
+on: push
+jobs:
+ hello-world:
+  runs-on: ubuntu-latest
+  steps:
+      - name: check out the code
+        uses: actions/checkout@v2
+      - name: print hello world'
+          echo " hello - world"
+  
